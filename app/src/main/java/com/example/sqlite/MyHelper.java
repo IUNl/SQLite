@@ -13,7 +13,7 @@ public class MyHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL( "create table info_user(name varchar(20),email varchar(50),number number(20))" );
+        db.execSQL( "create table info_user(name varchar(20),email varchar(50),number INTEGER PRIMARY KEY)" );
     }
 
     @Override
